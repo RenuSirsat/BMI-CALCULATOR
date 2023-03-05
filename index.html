@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="content">
+                <center><h1>BMI CALCULATOR</h1></center>
+                <p>
+                Height In C.M:<input type="number" id="Height"><br>
+                <span id="Height_error"></span>
+                </p>
+                <p>
+                    Weight In K.G:<input type="number" id="Weight"><br>
+                    <span id="Weight_error"></span>
+                    </p>
+                 <br>
+                 <center><button onclick="calc_btn()">Calculate</button></center>
+                 <br>
+                 <br>
+                 <div class="info" id="info">
+                    <p id="bmi">BMI : 00.00</p>
+                    <br>
+                    <hr width="100%" color="black">
+                    <br>
+                    <h3>Information</h3>
+                    <br>
+                    <div style="display: flex;" class="Weights">
+                       <p>Underweight</p>
+                       <p>Normal</p>
+                       <p>Overweight</p>
+                    </div>
+
+                    <div class="hr_flex">
+                        <hr width="200%"  color="blue">
+                        <hr width="200%"  color="green">
+                        <hr width="200%"  color="red">
+                    </div>
+                    <div style="display: flex;" class="Weights">
+                        <p>16.0-18.5</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>18.6-24.9</p>&nbsp;&nbsp;&nbsp;
+                        <p>25.0-40.0</p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+
+
+                 </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
